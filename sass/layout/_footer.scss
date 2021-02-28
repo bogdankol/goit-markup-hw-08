@@ -1,0 +1,29 @@
+.footer {
+  background: $footer-background;
+  padding: 60px 0;
+
+  & > .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  & a {
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus {
+      color: $color-hover_focus;
+    }
+  }
+
+  .social-svg {
+    fill: $second-main-color;
+    display: block;
+  }
+}
+
+.footer-svg {
+  display: block;
+  fill: $second-main-color;
+}

@@ -1,0 +1,78 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .logo-link {
+    display: flex;
+    font-family: $font-title;
+    letter-spacing: 0.03em;
+    font-size: 24px;
+    line-height: 1.166;
+    transition: color 250ms $transform-type;
+
+    &:link,
+    &:visited {
+      color: $main-text-color;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-hover_focus;
+    }
+  }
+}
+
+.logo {
+  color: $color-hover_focus;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo-link {
+    display: flex;
+    font-family: $font-title;
+    letter-spacing: 0.03em;
+    font-size: 24px;
+    line-height: 1.166;
+    transition: color 250ms $transform-type;
+
+    &:link,
+    &:visited {
+      color: $main-text-color;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-hover_focus;
+    }
+  }
+}
+
+.logo {
+  color: $color-hover_focus;
+}
+@media screen and (min-width: 1200px) {
+  .logo-link {
+    display: flex;
+    font-family: $font-title;
+    letter-spacing: 0.03em;
+    font-size: 26px;
+    line-height: 1.19;
+    padding: 24px 0 25px 0;
+    color: $main-text-color;
+
+    &:hover,
+    &:focus {
+      color: $color-hover_focus;
+    }
+  }
+}
+// .logo-link {
+//   display: flex;
+//   font-family: $font-title;
+//   letter-spacing: 0.03em;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   // padding: 24px 0 25px 0;
+
+//   &:hover,
+//   &:focus {
+//     color: $color-hover_focus;
+//   }
+// }

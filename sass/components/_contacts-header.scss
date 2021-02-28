@@ -1,0 +1,117 @@
+// .contacts-header {
+//   display: flex;
+//   align-items: center;
+//   color: $other-text-color;
+//   letter-spacing: 0.02em;
+
+//   .contacts-item {
+//     margin-right: 50px;
+
+//     &:last-child {
+//       margin-right: 0;
+//     }
+//   }
+// }
+
+// .contacts-link {
+//   display: flex;
+//   padding: 32px 0;
+
+//   &:visited,
+//   &:link {
+//     color: $other-text-color;
+//   }
+
+//   &:hover,
+//   &:focus {
+//     color: $color-hover_focus;
+//   }
+// }
+
+.first-header-svg,
+.second-header-svg {
+  margin-right: 10px;
+  display: block;
+  margin-top: 2px;
+}
+.second-header-svg {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-header {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+  }
+  .contacts-item:first-child {
+    margin-bottom: 10px;
+  }
+  .contacts-link {
+    display: flex;
+    transition: color 250ms $transform-type, fill 250ms $transform-type;
+  }
+  .contacts-link:link,
+  .contacts-link:visited {
+    color: $other-text-color;
+  }
+  .contacts-link:hover,
+  .contacts-link:focus {
+    color: $color-hover_focus;
+
+    .first-header-svg,
+    .second-header-svg {
+      fill: $color-hover_focus;
+    }
+  }
+
+  .first-header-svg,
+  .second-header-svg {
+    transform: scale(0.9);
+    fill: $other-text-color;
+  }
+}
+
+// desktop
+@media screen and (min-width: 1200px) {
+  .contacts-header {
+    display: flex;
+    align-items: center;
+    color: $other-text-color;
+    letter-spacing: 0.02em;
+
+    .contacts-item {
+      margin-right: 50px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .contacts-link {
+    display: flex;
+    padding: 32px 0;
+
+    .first-header-svg,
+    .second-header-svg {
+      fill: $other-text-color;
+      transition: fill 250ms $transform-type;
+    }
+
+    &:visited,
+    &:link {
+      color: $other-text-color;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-hover_focus;
+
+      .first-header-svg,
+      .second-header-svg {
+        fill: $color-hover_focus;
+      }
+    }
+  }
+}

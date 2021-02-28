@@ -1,0 +1,15 @@
+.logo-link,
+.footer-link,
+.contacts-header .contacts-link,
+.member-social-link-link,
+.member-social-link-link .social-svg,
+.clients-list-link .social-svg,
+.footer-list-item a,
+.footer-social-list-item .footer-social-link,
+.portfolio-main .filter-button.button-bc,
+.portfolio-list-link,
+.portfolio-list-header .overlay-text {
+  transition: color 250ms $transform-type,
+    background-color 250ms $transform-type, fill 250ms $transform-type,
+    box-shadow 250ms $transform-type, transform 250ms $transform-type;
+}

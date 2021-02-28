@@ -1,0 +1,24 @@
+.button {
+  line-height: 1.87;
+  background: $color-hover_focus;
+  color: $second-main-color;
+  padding: 10px 30px;
+  min-width: 200px;
+  max-height: 50px;
+  transition: background-color 250ms $transform-type,
+    box-shadow 250ms $transform-type;
+  font-family: inherit;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 4px;
+  border: 1px solid transparent;
+
+  &.button-bc {
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background-color: $modal-submit-button-hover_focus;
+      box-shadow: $modal-submit-button-shadow;
+    }
+  }
+}
