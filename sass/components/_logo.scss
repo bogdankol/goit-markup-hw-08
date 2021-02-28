@@ -47,6 +47,7 @@
 .logo {
   color: $color-hover_focus;
 }
+// desktop
 @media screen and (min-width: 1200px) {
   .logo-link {
     display: flex;
@@ -56,6 +57,7 @@
     line-height: 1.19;
     padding: 24px 0 25px 0;
     color: $main-text-color;
+    transition: color 250ms $transform-type;
 
     &:hover,
     &:focus {
