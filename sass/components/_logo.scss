@@ -23,6 +23,7 @@
   color: $color-hover_focus;
 }
 
+// tablet
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo-link {
     display: flex;
@@ -47,6 +48,7 @@
 .logo {
   color: $color-hover_focus;
 }
+
 // desktop
 @media screen and (min-width: 1200px) {
   .logo-link {
@@ -65,16 +67,3 @@
     }
   }
 }
-// .logo-link {
-//   display: flex;
-//   font-family: $font-title;
-//   letter-spacing: 0.03em;
-//   font-size: 26px;
-//   line-height: 1.19;
-//   // padding: 24px 0 25px 0;
-
-//   &:hover,
-//   &:focus {
-//     color: $color-hover_focus;
-//   }
-// }

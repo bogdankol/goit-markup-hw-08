@@ -19,12 +19,118 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  max-height: 581px;
-  background: $second-main-color;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  // mobile and tablet
+  @media screen and (min-width: 320px) and (max-width: 1199px) {
+    width: 100%;
+    max-width: 450px;
+    height: 95vh;
+    max-height: 609px;
+    overflow: scroll;
+    background: $second-main-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    .form-title {
+      margin: 0 0 12px 0;
+      font-size: 20px;
+      line-height: 1.5;
+      text-align: center;
+      letter-spacing: 0.03em;
+      font-weight: bold;
+    }
+
+    .checkbox-text {
+      font-size: 12px;
+      line-height: 1.167;
+      letter-spacing: 0.03em;
+      color: $other-text-color;
+      justify-content: center;
+      margin: 0 0 30px 0;
+      display: inline;
+
+      &-link {
+        color: $color-hover_focus;
+        text-decoration: underline;
+        margin-left: 5px;
+      }
+
+      &::before {
+        display: inline-block;
+        content: "";
+        width: 16px;
+        height: 15px;
+        border: 2px solid $main-text-color;
+        border-radius: 2px;
+        background-image: url("../images/icons/modal-policy-icon.svg");
+        background-repeat: no-repeat;
+        margin: -1px 7px 0 0;
+      }
+
+      &-submit-button {
+        font-size: 16px;
+        line-height: 1.87;
+      }
+    }
+
+    .modal-feedback {
+      max-height: 138px;
+    }
+  }
+
+  // desktop
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    max-height: 581px;
+    background: $second-main-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    .form-title {
+      margin: 0 0 12px 0;
+      font-size: 20px;
+      line-height: 1.15;
+      text-align: center;
+      letter-spacing: 0.03em;
+      font-weight: bold;
+    }
+
+    .checkbox-text {
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: $other-text-color;
+      justify-content: center;
+      margin: 0 0 30px 0;
+
+      &-link {
+        color: $color-hover_focus;
+        text-decoration: underline;
+        margin-left: 5px;
+      }
+
+      &::before {
+        content: "";
+        width: 16px;
+        height: 15px;
+        border: 2px solid $main-text-color;
+        border-radius: 2px;
+        background-image: url("../images/icons/modal-policy-icon.svg");
+        background-repeat: no-repeat;
+        margin: 3px 7px 0 0;
+      }
+
+      .checkbox:checked + &::before {
+        background-color: $color-hover_focus;
+        border-color: $color-hover_focus;
+      }
+
+      .checkbox:focus + &::before {
+        border-color: $color-hover_focus;
+      }
+    }
+  }
 
   &-input,
   &-feedback {
@@ -139,6 +245,7 @@
 .modal-submit-button {
   display: flex;
 }
+
 /* add transition to elements */
 .modal-input,
 .modal-feedback,
@@ -152,15 +259,6 @@
 .modal-form {
   flex-direction: column;
   padding: 40px;
-
-  .form-title {
-    margin: 0 0 12px 0;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    font-weight: bold;
-  }
 
   .is-relative {
     position: relative;
@@ -184,37 +282,11 @@
   margin: 0 0 10px 0;
 }
 
-.checkbox-text {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: $other-text-color;
-  justify-content: center;
-  margin: 0 0 30px 0;
+.checkbox:checked + .checkbox-text::before {
+  background-color: $color-hover_focus;
+  border-color: $color-hover_focus;
+}
 
-  &-link {
-    color: $color-hover_focus;
-    text-decoration: underline;
-    margin-left: 5px;
-  }
-
-  &::before {
-    content: "";
-    width: 16px;
-    height: 15px;
-    border: 2px solid $main-text-color;
-    border-radius: 2px;
-    background-image: url("../images/icons/modal-policy-icon.svg");
-    background-repeat: no-repeat;
-    margin: 3px 7px 0 0;
-  }
-
-  .checkbox:checked + &::before {
-    background-color: $color-hover_focus;
-    border-color: $color-hover_focus;
-  }
-
-  .checkbox:focus + &::before {
-    border-color: $color-hover_focus;
-  }
+.checkbox:focus + .checkbox-text::before {
+  border-color: $color-hover_focus;
 }

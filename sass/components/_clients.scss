@@ -28,7 +28,7 @@
     border: 1px solid $svg-color-cool;
     box-sizing: border-box;
     border-radius: 4px;
-    transition: border-color 250ms $transform-type;
+    transition: border-color 2500ms $transform-type;
 
     &:hover,
     &:hover .social-svg,
@@ -36,6 +36,62 @@
     &:focus .social-svg {
       border-color: $color-hover_focus;
       fill: $color-hover_focus;
+    }
+  }
+}
+
+// mobile
+@media screen and (max-width: 479px) {
+  .clients-list {
+    display: flex;
+    flex-direction: column;
+    max-width: 210px;
+    margin: 0 auto;
+  }
+  .our-clients-title {
+  }
+  .clients-list-item {
+    width: 100%;
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+  .our-clients-title {
+  }
+  .clients-list-item {
+    width: 210px;
+    margin-bottom: 30px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+}
+
+// tablet
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 738px;
+    margin: 0 auto;
+  }
+  .our-clients-title {
+  }
+  .clients-list-item {
+    width: 226px;
+    margin-bottom: 30px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
     }
   }
 }

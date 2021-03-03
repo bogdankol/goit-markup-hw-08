@@ -1,5 +1,14 @@
 .what-we-do {
-  padding-bottom: 94px;
+  .container {
+    width: 1200px;
+    padding-top: 0;
+    padding-bottom: 94px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
   & h2 {
     font-size: 36px;

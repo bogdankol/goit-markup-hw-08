@@ -64,6 +64,7 @@
     font-size: 18px;
     line-height: 2;
     margin: 0 0 4px 0;
+    letter-spacing: 0.03em;
   }
 
   p {
@@ -72,6 +73,7 @@
     font-size: 16px;
     line-height: 1.87;
     margin: 0;
+    letter-spacing: 0.03em;
   }
 }
 
@@ -79,4 +81,53 @@
   display: block;
   width: 100%;
   padding: 20px 24px;
+}
+
+// mobile {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-list {
+    max-width: 450px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .bottom-list-item {
+    margin-bottom: 0;
+  }
+  .portfolio-list-item {
+    width: 100%;
+    // margin: 0 0 30px 0;
+
+    &:not(:last-child) {
+      margin: 0 0 30px 0;
+    }
+  }
+}
+
+// tablet
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-list {
+    max-width: 768px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+
+  .bottom-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .portfolio-list-item {
+    width: 100%;
+    max-width: 354px;
+    
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+    &:nth-child(3n) {
+      margin-right: auto;
+    }
+
+    // &:not(:last-child) {
+    //   margin: 0 0 30px 0;
+    // }
+  }
 }
