@@ -42,7 +42,7 @@
       top: 0;
       left: 0;
       display: flex;
-      transform: translate(0, 100%);
+      transform: translate(0, 150%);
 
       width: 100%;
       height: 100%;
@@ -104,6 +104,14 @@
   }
 }
 
+@media screen and (max-width: 340px) {
+  .portfolio-list-header {
+    .overlay-text {
+      font-size: 14px;
+      line-height: 1.77;
+    }
+  }
+}
 // tablet
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-list {
@@ -118,7 +126,7 @@
   .portfolio-list-item {
     width: 100%;
     max-width: 354px;
-    
+
     &:nth-child(2n) {
       margin-right: 0;
     }
