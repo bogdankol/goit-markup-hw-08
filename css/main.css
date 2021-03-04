@@ -666,13 +666,13 @@ a {
 
 .footer {
   background: #30313b;
-  padding: 60px 0;
+  padding: 0 0;
 }
 
 .footer > .container {
   display: flex;
   align-items: baseline;
-  padding: 0 15px;
+  padding: 60px 15px;
 }
 
 .footer a {
@@ -702,7 +702,6 @@ a {
     flex-direction: column;
     max-width: 480px;
     margin: 0 auto;
-    padding: 60px 15px;
   }
 }
 
