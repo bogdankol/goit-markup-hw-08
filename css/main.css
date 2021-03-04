@@ -672,6 +672,7 @@ a {
 .footer > .container {
   display: flex;
   align-items: baseline;
+  padding: 0 15px;
 }
 
 .footer a {
