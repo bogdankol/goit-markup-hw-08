@@ -26,6 +26,7 @@
     }
   }
 }
+
 .portfolio-filter-item:not(last-child) {
   margin-right: 8px;
 }
@@ -34,10 +35,9 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .portfolio-filter {
     justify-content: flex-start;
-    margin-bottom: 40px;
     flex-wrap: wrap;
     max-width: 479px;
-    margin: 0 auto;
+    margin: 0 auto 40px;
     padding: 0 15px;
   }
 

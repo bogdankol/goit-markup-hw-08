@@ -64,8 +64,10 @@
     max-width: 450px;
     margin: 0 auto;
   }
+
   .our-clients-title {
   }
+
   .clients-list-item {
     width: 210px;
     margin-bottom: 30px;
@@ -78,20 +80,27 @@
 
 // tablet
 @media screen and (min-width: 768px) and (max-width: 1199px) {
+
   .clients-list {
     display: flex;
     flex-wrap: wrap;
     max-width: 738px;
     margin: 0 auto;
   }
+
   .our-clients-title {
   }
+  
   .clients-list-item {
     width: 226px;
     margin-bottom: 30px;
 
     &:nth-child(3n) {
       margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
     }
   }
 }
