@@ -1,3 +1,6 @@
+.our-clients {
+  padding: 94px 0;
+}
 .our-clients-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -58,6 +61,12 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
+  .our-clients {
+    padding: 60px 0;
+  }
+  .our-clients-title {
+    margin-bottom: 30px;
+  }
   .clients-list {
     display: flex;
     flex-wrap: wrap;
@@ -80,7 +89,12 @@
 
 // tablet
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
+  .our-clients {
+    padding: 60px 0;
+  }
+  .our-clients-title {
+    margin-bottom: 30px;
+  }
   .clients-list {
     display: flex;
     flex-wrap: wrap;
@@ -88,9 +102,6 @@
     margin: 0 auto;
   }
 
-  .our-clients-title {
-  }
-  
   .clients-list-item {
     width: 226px;
     margin-bottom: 30px;

@@ -1,3 +1,6 @@
+.features {
+  padding: 60px 0;
+}
 .features-list {
   display: flex;
   justify-content: space-between;
@@ -55,7 +58,7 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .container {
     max-width: 480px;
-    padding: 60px 15px;
+    padding: 0 15px;
     margin: 0 auto;
   }
 
@@ -83,7 +86,7 @@
 // tablet
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
-    padding: 60px 15px;
+    padding: 0 15px;
     margin: 0 auto;
     max-width: 768px;
   }
@@ -105,9 +108,12 @@
 
 // desktop
 @media screen and (min-width: 1200px) {
+  .features {
+    padding: 94px 0;
+  }
   .container {
     width: 1200px;
-    padding: 94px 15px;
+    padding: 0 15px;
     margin: 0 auto;
   }
   .features-item {
