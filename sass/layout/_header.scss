@@ -46,7 +46,7 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 95vh;
+    height: 100vh;
     max-height: 796px;
     transform: translateY(-150%);
     transition: transform 250ms $transform-type;
@@ -95,6 +95,7 @@
   }
   .mobile-menu-navigation {
     display: block;
+
     a {
       color: $main-text-color;
       transition: color 250ms $transform-type;
@@ -175,6 +176,40 @@
       border-right: 1px solid black;
       margin: 0 10px;
     }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .mobile-menu-navigation-item {
+    font-size: 22px;
+
+    &:first-child {
+      margin-bottom: 15px;
+    }
+
+    &:nth-child(2n) {
+      margin-bottom: 12px;
+    }
+
+    &:nth-child(3n) {
+      margin-bottom: 25px;
+    }
+  }
+
+  .mobile-menu-contacts-item {
+    font-size: 18px;
+
+    &:first-child {
+      margin-bottom: 15px;
+    }
+  }
+
+  .contacts-link-mail {
+    font-size: 18px;
+  }
+
+  .mobile-menu-social-links-item {
+    font-size: 16px;
   }
 }
 

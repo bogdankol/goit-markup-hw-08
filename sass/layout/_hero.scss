@@ -1,13 +1,10 @@
 // // mobile
 @media screen and (min-width: 320px) and (max-width: 767px) {
-
   @media screen and (min-device-pixel-ratio: 1),
     screen and (min-resolution: 96dpi),
     screen and (min-resolution: 1dppx) {
-      
     .hero {
       max-width: 767px;
-      padding: 118px 0;
       height: 400px;
       text-align: center;
       background-image: linear-gradient(
@@ -22,15 +19,22 @@
       color: $second-main-color;
       margin: 0 auto;
 
+      .container {
+        padding: 118px 15px;
+        width: 100%;
+        height: 100%;
+      }
+
       h1 {
         font-size: 26px;
         line-height: 1.62;
         letter-spacing: 0.06em;
-      }
+        margin: 0 0 30px;
 
-      .container {
-        padding: 0;
-        width: 100%;
+        @media screen and (min-width: 320px) and (max-width: 479px) {
+          font-size: 20px;
+          word-wrap: none;
+        }
       }
     }
   }
@@ -38,12 +42,10 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-
     .hero {
       width: 100%;
       max-width: 767px;
       height: 400px;
-      padding: 118px 0;
       text-align: center;
       background-image: linear-gradient(
           to right,
@@ -59,22 +61,21 @@
     }
 
     .container {
-      padding: 0;
+      padding: 118px 15px;
+      width: 100%;
+      height: 100%;
     }
   }
 }
 
 // tablet
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
   @media screen and (min-device-pixel-ratio: 1),
     screen and (min-resolution: 96dpi),
     screen and (min-resolution: 1dppx) {
-
     .hero {
       width: 100%;
       max-width: 1199px;
-      padding: 118px 204px;
       text-align: center;
       background-image: linear-gradient(
           to right,
@@ -89,20 +90,23 @@
       margin: 0 auto;
     }
 
+    .hero > .container {
+      padding: 118px 204px;
+    }
+
     .font-900 {
       font-size: 26px;
       line-height: 1.615;
+      margin: 0 0 30px;
     }
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-
     .hero {
       width: 100%;
       max-width: 1199px;
-      padding: 118px 204px;
       text-align: center;
       background-image: linear-gradient(
           to right,
@@ -121,20 +125,20 @@
         line-height: 1.615;
       }
     }
+    .hero > .container {
+      padding: 118px 204px;
+    }
   }
 }
 
 // desktop
 @media screen and (min-width: 1200px) {
-
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-
     .hero {
       width: 100%;
       max-width: 1600px;
-      padding: 200px 0;
       text-align: center;
       background-image: linear-gradient(
           to right,
@@ -148,16 +152,23 @@
       color: $second-main-color;
       margin: 0 auto;
     }
+
+    .hero > .container {
+      padding: 200px 0;
+      margin: 0 auto;
+    }
+
+    .font-900 {
+      margin: 0 0 30px;
+    }
   }
 
   @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 1),
     screen and (min-resolution: 96dpi),
     screen and (min-resolution: 1dppx) {
-      
     .hero {
       width: 100%;
       max-width: 1600px;
-      padding: 200px 0;
       text-align: center;
       background-image: linear-gradient(
           to right,
@@ -170,6 +181,15 @@
       background-position: center;
       color: $second-main-color;
       margin: 0 auto;
+    }
+
+    .hero > .container {
+      padding: 200px 0;
+      margin: 0 auto;
+    }
+
+    .font-900 {
+      margin: 0 0 30px;
     }
   }
 }
