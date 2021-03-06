@@ -10,7 +10,6 @@
         rel="stylesheet">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
@@ -179,9 +178,9 @@
         <section class="team">
             <div class="container">
                 <h2 class="font-700 team-title">Наша команда</h2>
-                <ul class="team-list" data-aos="zoom-in-up">
-                    <li class="team-list-item" data-aos="flip-right">
-                        <picture data-aos="fade-right">
+                <ul class="team-list">
+                    <li class="team-list-item">
+                        <picture>
                             <source srcset="./images/our-team/igor_desktop.webp 1x, ./images/our-team/igor_desktop@2x.webp 2x"
                                 media="(min-width: 1200px)" type="image/webp">
                             <source srcset="./images/our-team/igor_desktop.jpg 1x, ./images/our-team/igor_desktop@2x.jpg 2x" media="(min-width: 1200px)">
@@ -232,7 +231,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team-list-item" data-aos="flip-left">
+                    <li class="team-list-item">
                         <picture>
                             <source srcset="./images/our-team/olga_desktop.webp 1x, ./images/our-team/olga_desktop@2x.webp 2x"
                                 media="(min-width: 1200px)" type="image/webp">
@@ -286,7 +285,7 @@
                         </div>
                         
                     </li>
-                    <li class="team-list-item" data-aos="fade-down-left">
+                    <li class="team-list-item">
                         <picture>
                             <source srcset="./images/our-team/nikolay_desktop.webp 1x, ./images/our-team/nikolay_desktop@2x.webp 2x"
                                 media="(min-width: 1200px)" type="image/webp">
@@ -340,7 +339,7 @@
                         </div>
                        
                     </li>
-                    <li class="team-list-item" data-aos="fade-up">
+                    <li class="team-list-item">
                         <picture>
                             <source srcset="./images/our-team/mihail_desktop.webp 1x, ./images/our-team/mihail_desktop@2x.webp 2x"
                                 media="(min-width: 1200px)" type="image/webp">
@@ -401,7 +400,7 @@
         <section class="our-clients">
             <div class="container">
                 <h2 lang="ru" class="font-700 our-clients-title">Постоянные клиенты</h2>
-                <ul class="clients-list" data-aos="zoom-in-right">
+                <ul class="clients-list">
                     <li class="clients-list-item">
                         <a href="" class="clients-list-link">
                             <svg class="social-svg" width="44" height="49">
@@ -450,8 +449,7 @@
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="footer-leftside" data-aos="fade-up"
-     data-aos-duration="3000">
+            <div class="footer-leftside">
                 <a href="./index.html" class="footer-link"><span class="logo">Web</span>Studio</a>
                 <address class="address">
                     <ul class="footer-list">
@@ -468,9 +466,7 @@
                     </ul>
                 </address>
             </div>
-            <div class="footer-center" data-aos="fade-down"
-     data-aos-easing="linear"
-     data-aos-duration="1500">
+            <div class="footer-center">
                 <p lang="ru" class="footer-text font-700">присоединяйтесь</p>
                 <ul class="footer-social-list">
                     <li class="footer-social-list-item">
@@ -503,9 +499,7 @@
                     </li>
                 </ul>
             </div>
-            <form class="footer-form" data-aos="flip-left"
-                                        data-aos-easing="ease-out-cubic"
-                                        data-aos-duration="2000">
+            <form class="footer-form">
                 <label lang="ru" class="footer-label">
                     <span class="footer-label-text font-700">подпишитесь на рассылку</span>
                     <input type="email" name="email" class="footer-mail" placeholder="E-mail">
@@ -576,10 +570,6 @@
     
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
-    <script src="./js/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>
