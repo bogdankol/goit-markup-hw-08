@@ -44,11 +44,11 @@
   }
 
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     max-height: 796px;
     transform: translateY(-150%);
     transition: transform 250ms $transform-type;
